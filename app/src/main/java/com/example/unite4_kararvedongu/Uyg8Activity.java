@@ -10,4 +10,12 @@ public class Uyg8Activity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        for (int i = 0; i <= 100; i += 3) {
+            System.out.println(i);
+        }
+    }
 }

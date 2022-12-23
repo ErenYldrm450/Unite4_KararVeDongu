@@ -10,4 +10,13 @@ public class Uyg7Activity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        for (int i=1;i<=50; i++) {
+            System.out.println(i);
+        }
+    }
 }
